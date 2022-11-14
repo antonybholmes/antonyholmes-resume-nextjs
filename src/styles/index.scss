@@ -1,0 +1,121 @@
+// @import "tailwindcss/base";
+// @import "tailwindcss/components";
+// @import "tailwindcss/utilities";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  @apply p-0 m-0 min-h-full;
+}
+
+body {
+  @apply relative p-0 m-0 text-sm bg-white text-gray-900;
+}
+
+
+
+
+
+
+@page {
+  size: letter;
+  margin: 0;
+}
+
+@media print {
+  .page {
+    page-break-after: always;
+    size: letter;
+    margin: 0;
+  }
+}
+
+// .header-link {
+//   @apply link text-white opacity-50 mr-6 trans-ani;
+// }
+
+// .header-link:hover {
+//   @apply opacity-90;
+// }
+
+// .header-link-active {
+//   @apply opacity-100;
+// }
+
+// .header-link-active:hover {
+//   @apply opacity-100;
+// }
+
+// .header-link-underline {
+//   @apply link pb-1 border-b-3 mr-8 border-solid font-semibold text-white uppercase opacity-70 trans-ani;
+// }
+
+// .header-link {
+//   @apply header-link-underline border-transparent ;
+// }
+
+// .header-link:hover {
+//   @apply opacity-95; //columbia-secondary-blue;
+// }
+
+// .header-link-active {
+//   @apply header-link-underline border-white opacity-95; //columbia-secondary-blue;
+// }
+
+// .header-link-active:hover {
+//   @apply border-white opacity-95; //columbia-secondary-blue;
+// }
+
+// header white
+
+// .header-link-base {
+//   @apply link  text-sm trans-ani;
+// }
+
+// .header-link {
+//   @apply header-link-base text-white-60;
+// }
+
+// .header-link:hover {
+//   @apply text-white-90;
+// }
+
+// .header-link-active {
+//   @apply header-link-base text-white-99;
+// }
+
+// .header-link-active:hover {
+//   @apply text-white-99;
+// }
+
+// header blue
+
+// .header-link-base {
+//   @apply block link trans-ani border-b-2 border-solid border-transparent py-1;
+// }
+
+// .header-link {
+//   @apply header-link-base text-gray-900;
+// }
+
+// .header-link:hover {
+//   @apply text-gray-900 border-gray-400;
+// }
+
+// .header-link-active {
+//   @apply header-link-base text-gray-900 border-gray-900;
+// }
+
+// .header-link-active:hover {
+//   @apply text-gray-900 border-gray-900;
+// }
+
+h1, h2, h3 {
+  @apply m-0 p-0;
+}
+
+h1 {
+  @apply font-semibold;
+}
