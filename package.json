@@ -14,14 +14,14 @@
   "dependencies": {
     "@fontsource/figtree": "^4",
     "@fontsource/plus-jakarta-sans": "^4.5.10",
-    "@fortawesome/fontawesome-svg-core": "^6.2.0",
-    "@fortawesome/free-brands-svg-icons": "^6.2.0",
-    "@fortawesome/free-regular-svg-icons": "^6.2.0",
-    "@fortawesome/free-solid-svg-icons": "^6.2.0",
+    "@fortawesome/fontawesome-svg-core": "^6.2.1",
+    "@fortawesome/free-brands-svg-icons": "^6.2.1",
+    "@fortawesome/free-regular-svg-icons": "^6.2.1",
+    "@fortawesome/free-solid-svg-icons": "^6.2.1",
     "@fortawesome/react-fontawesome": "^0.2.0",
     "@types/node": "18.11.9",
     "@types/react": "18.0.25",
-    "@types/react-dom": "18.0.8",
+    "@types/react-dom": "18.0.9",
     "eslint": "8.27.0",
     "eslint-config-next": "13.0.3",
     "fs-extra": "^10.1.0",
@@ -29,7 +29,7 @@
     "puppeteer-core": "^19.2.2",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "typescript": "4.8.4"
+    "typescript": "4.9.3"
   },
   "devDependencies": {
     "@types/fs-extra": "^9.0.13",

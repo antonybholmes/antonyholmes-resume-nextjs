@@ -14,7 +14,13 @@ import "@fontsource/figtree/600.css"
 import "@fontsource/figtree/700.css"
 import "@fontsource/figtree/800.css"
 
+
+
 import type { AppProps } from 'next/app'
+
+import { config } from '@fortawesome/fontawesome-svg-core'
+import '@fortawesome/fontawesome-svg-core/styles.css'
+config.autoAddCss = false
 
 export default function App({ Component, pageProps }: AppProps) {
   return <Component {...pageProps} />
