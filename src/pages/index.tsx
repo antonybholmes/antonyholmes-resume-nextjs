@@ -242,11 +242,11 @@ export default function IndexPage({ publications }:IProps) {
           </div>
           <div className="flex flex-col gap-y-6">
             <div className="flex flex-col items-center gap-y-3 text-center">
-            <h1 className="text-5xl font-bold uppercase  tracking-wider">
+            <h1 className="text-4xl font-bold uppercase tracking-wider">
                 Antony <span className="text-gray-400 font-thin">Holmes</span>
               </h1>
-              <hr className="bg-gray-500 w-1/10 border-none" style={{height: "2px"}}/>
-              <h2 className="text-xl text-gray-700 font-semibold">
+              <hr className="bg-gray-400 w-1/10 border-none" style={{height: "2px"}}/>
+              <h2 className="text-xl text-gray-700 font-medium">
                   Data Scientist / Software Engineer
                 </h2>
             </div>
