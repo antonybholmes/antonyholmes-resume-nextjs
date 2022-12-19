@@ -9,7 +9,7 @@ import Job from "../components/job"
 import Bold from "../components/bold"
 import TwoCol from "../components/twocol"
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons"
-import { faPhone } from "@fortawesome/free-solid-svg-icons"
+import { faEarthAmericas, faGlobe, faPhone } from "@fortawesome/free-solid-svg-icons"
 import { faGithub } from "@fortawesome/free-brands-svg-icons"
 import cn from "../lib/class-names"
 import { join } from "path"
@@ -24,39 +24,45 @@ export const JOBS_DIR = join(CONTENT_DIR, "jobs")
 export const PUBLICATIONS_DIR = join(CONTENT_DIR, "publications")
 
 
+// const Title = ({ title = "" }) => {
+//   return (
+//     <Row isVCentered={true} className="gap-x-2 mb-2">
+//       <svg viewBox="0 0 190 30" className="w-40">
+//         <defs>
+//           <linearGradient id="rainbow" x1="0" x2="100%" y1="0" y2="0">
+//             <stop stopColor="#06b6d4" offset="0%" />
+//             <stop stopColor="#6366f1" offset="50%" />
+//             <stop stopColor="#f43f5e" offset="100%" />
+//           </linearGradient>
+//         </defs>
+//         <text>
+//           <tspan
+//             x="0"
+//             y="25"
+//             className="text-2xl font-bold uppercase"
+//             fill="url(#rainbow)"
+//           >
+//             {title}
+//           </tspan>
+//         </text>
+//       </svg>
+//     </Row>
+//   )
+// }
+
 const Title = ({ title = "" }) => {
   return (
     <Row isVCentered={true} className="gap-x-2 mb-2">
-      {/* <img
-          src="/assets/svg/heading-arrow.svg"
-          width="20"
-          height="30"
-          className="w-5"
-        /> */}
-      <svg viewBox="0 0 190 30" className="w-40">
-        <defs>
-          <linearGradient id="rainbow" x1="0" x2="100%" y1="0" y2="0">
-            <stop stopColor="#06b6d4" offset="0%" />
-            <stop stopColor="#6366f1" offset="50%" />
-            <stop stopColor="#f43f5e" offset="100%" />
-          </linearGradient>
-        </defs>
-        <text>
-          <tspan
-            x="0"
-            y="25"
-            className="text-2xl font-bold uppercase"
-            fill="url(#rainbow)"
+      <h1 className="text-2xl font-bold uppercase text-gray-700"
           >
             {title}
-          </tspan>
-        </text>
-      </svg>
+
+      </h1>
     </Row>
   )
 }
 
-const Skill = ({ title = "", color = "bg-blue-400 text-white" }) => {
+const Skill = ({ title = "", color = "bg-blue-500 text-white" }) => {
   return (
     <Row
       isCentered={true}
@@ -113,30 +119,17 @@ export default function IndexPage({ publications }:IProps) {
 
         <TwoCol className="mt-8">
           <div className="flex flex-col gap-y-5">
-            <div>
-              <h1 className="text-5xl font-extrabold">
-                Antony Holmes
-              </h1>
+  
+            <div className="flex flex-col gap-y-2 py-4 px-3 rounded-xl bg-gray-200/80 text-gray-600">
+            <Row isVCentered={true} className="gap-x-2">
+                <FontAwesomeIcon icon={faEarthAmericas} size="lg" />
 
-              <Row
-                isVCentered={true}
-                isCentered={false}
-                className="gap-x-4 mt-1"
-              >
-                <h2 className="text-xl text-gray-500 font-semibold uppercase tracking-wide">
-                  Data Scientist
-                </h2>
-                {/* <span className="rounded-full w-2 h-2 bg-gray-300" />
-              <h2 className="text-lg text-gray-500">Software Engineer</h2>
-              <span className="rounded-full w-2 h-2 bg-gray-300" />
-              <h2 className="text-lg text-gray-500">New York</h2> */}
+                <div>
+                  New York
+                </div>
               </Row>
 
-              <h2 className="text-lg">New York</h2>
-            </div>
-
-            <div className="flex flex-col gap-y-2 py-4 px-3 rounded-xl bg-gray-200/80 text-gray-600">
-              <Row isVCentered={true} className="gap-x-3">
+              <Row isVCentered={true} className="gap-x-2">
                 <FontAwesomeIcon icon={faEnvelope} size="lg" />
 
                 <div>
@@ -149,7 +142,7 @@ export default function IndexPage({ publications }:IProps) {
                 </div>
               </Row>
 
-              <Row isVCentered={true} className="gap-x-3">
+              <Row isVCentered={true} className="gap-x-2">
                 <FontAwesomeIcon icon={faPhone} size="lg" />
 
                 <div>
@@ -159,7 +152,7 @@ export default function IndexPage({ publications }:IProps) {
                 </div>
               </Row>
 
-              <Row isVCentered={true} className="gap-x-3">
+              <Row isVCentered={true} className="gap-x-2">
                 <FontAwesomeIcon icon={faGithub} size="lg" />
 
                 <div>
@@ -196,9 +189,9 @@ export default function IndexPage({ publications }:IProps) {
               </div>
 
               <div className="flex flex-row flex-wrap gap-x-2 gap-y-1 mt-4">
-                <Skill title="Single Cell" color="bg-teal-400 text-white" />
-                <Skill title="RNA-seq" color="bg-teal-400 text-white" />
-                <Skill title="ChIP-seq" color="bg-teal-400 text-white" />
+                <Skill title="Single Cell" color="bg-teal-500 text-white" />
+                <Skill title="RNA-seq" color="bg-teal-500 text-white" />
+                <Skill title="ChIP-seq" color="bg-teal-500 text-white" />
               </div>
             </div>
 
@@ -210,13 +203,11 @@ export default function IndexPage({ publications }:IProps) {
                 <Job
                   title="Ph.D Mathematical Biology"
                   place="University of Warwick, UK"
-                  color="text-gray-800"
                 />
 
                 <Job
                   title="B.Sc Computer Science"
                   place="University of Warwick, UK"
-                  color="text-gray-800"
                 >
                   <div>First-class honours</div>
                 </Job>
@@ -250,6 +241,15 @@ export default function IndexPage({ publications }:IProps) {
             </div>
           </div>
           <div className="flex flex-col gap-y-6">
+            <div className="flex flex-col items-center gap-y-3 text-center">
+            <h1 className="text-5xl font-bold uppercase  tracking-wider">
+                Antony <span className="text-gray-400 font-thin">Holmes</span>
+              </h1>
+              <hr className="bg-gray-500 w-1/10 border-none" style={{height: "2px"}}/>
+              <h2 className="text-xl text-gray-700 font-semibold">
+                  Data Scientist / Software Engineer
+                </h2>
+            </div>
             <div>
               <p>
                 Data scientist and full stack software developer with 8 years
@@ -263,7 +263,7 @@ export default function IndexPage({ publications }:IProps) {
             </div>
 
             <div>
-              <Title title="Work History" />
+              <Title title="Experience" />
               <div className="flex flex-col gap-y-4">
                 <Job
                   date="2015 - Present"
